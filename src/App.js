@@ -13,10 +13,6 @@ function App() {
   //Custom Hook
   const joke = useRandomJoke(firstName, lastName);
 
-  //  const jokeReturn() = {
-
-  //  }
-
   const generateJoke = (e) => {
     e.preventDefault();
     setFirstName(firstNameRef.current.value);
@@ -46,7 +42,7 @@ function App() {
             Generate Joke
           </button>
         </form>
-        {<h2 className="joke__text">{joke}</h2>}
+        <h2 className="joke__text">{firstName ? joke : null}</h2>
       </div>
     </div>
   );
