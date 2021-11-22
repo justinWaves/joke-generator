@@ -13,6 +13,10 @@ function App() {
   //Custom Hook
   const joke = useRandomJoke(firstName, lastName);
 
+  //  const jokeReturn() = {
+
+  //  }
+
   const generateJoke = (e) => {
     e.preventDefault();
     setFirstName(firstNameRef.current.value);
@@ -20,7 +24,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="app">
       {/*Background Animation*/}
       <Background />
       {/*JSX Return Render*/}
@@ -37,6 +41,7 @@ function App() {
             placeholder="last name"
             ref={lastNameRef}
           />
+          <div class="break"></div>
           <button className="button__submit" onClick={generateJoke}>
             Generate Joke
           </button>
