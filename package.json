@@ -1,6 +1,6 @@
 {
   "name": "joke-generator",
-  "homepage": "https://justinwaves.github.io/joke-generator/",
+  "homepage": "https://github.com/justinWaves/joke-generator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
