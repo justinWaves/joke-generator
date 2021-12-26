@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function useRandomJoke(firstName, lastName) {
+function UseRandomJoke(firstName, lastName) {
   const [joke, setJoke] = useState(" ");
 
   useEffect(() => {
@@ -19,4 +19,4 @@ function useRandomJoke(firstName, lastName) {
   return joke;
 }
 
-export default useRandomJoke;
+export default UseRandomJoke;

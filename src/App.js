@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState, useRef } from "react";
-import useRandomJoke from "./useRandomJoke";
+import UseRandomJoke from "./useRandomJoke";
 import Background from "./Background";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
   const [lastName, setLastName] = useState("");
 
   //Custom Hook
-  const joke = useRandomJoke(firstName, lastName);
+  const joke = UseRandomJoke(firstName, lastName);
 
   const generateJoke = (e) => {
     e.preventDefault();
